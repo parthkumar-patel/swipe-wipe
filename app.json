@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "Swipe Wipe",
+    "slug": "swipe-wipe",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "scheme": "swipe-wipe",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0A0A"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Swipe Wipe needs access to your photos so you can review, organize, and clean up your library.",
+        "NSPhotoLibraryAddUsageDescription": "Swipe Wipe needs permission to save photos to albums."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0A0A0A"
+      }
+    },
+    "plugins": [
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Swipe Wipe needs access to your photos so you can review, organize, and clean up your library.",
+          "savePhotosPermission": "Swipe Wipe needs permission to save photos to albums."
+        }
+      ],
+      "expo-router",
+      "expo-video"
+    ]
+  }
+}
